@@ -5,7 +5,7 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"&eslint-config@workspace:packages/eslint-config":
+"&eslint-config@workspace:, &eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "&eslint-config@workspace:packages/eslint-config"
   dependencies:
@@ -16,6 +16,16 @@ __metadata:
     globals: "catalog:"
     typescript: "catalog:"
     typescript-eslint: "catalog:"
+  languageName: unknown
+  linkType: soft
+
+"&example-cli@workspace:packages/example-cli":
+  version: 0.0.0-use.local
+  resolution: "&example-cli@workspace:packages/example-cli"
+  dependencies:
+    "&eslint-config": "workspace:"
+    eslint: "catalog:"
+    typescript: "catalog:"
   languageName: unknown
   linkType: soft
 

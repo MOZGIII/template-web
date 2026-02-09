@@ -1,0 +1,19 @@
+{
+  "name": "&example-cli",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "dev": "node src/main.ts",
+    "example-cli:dev": "yarn dev",
+    "eslint:fix": "eslint . --fix",
+    "eslint:check": "eslint .",
+    "tsc:check": "tsc --build --noEmit"
+  },
+  "devDependencies": {
+    "&eslint-config": "workspace:",
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}
