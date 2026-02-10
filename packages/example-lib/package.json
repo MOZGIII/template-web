@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "&eslint-config": "workspace:",
+    "@rsbuild/plugin-source-build": "catalog:",
     "@rslib/core": "catalog:",
     "@rstest/core": "catalog:",
     "eslint": "catalog:",

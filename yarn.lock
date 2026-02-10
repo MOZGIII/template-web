@@ -35,6 +35,7 @@ __metadata:
   resolution: "&example-lib@workspace:packages/example-lib"
   dependencies:
     "&eslint-config": "workspace:"
+    "@rsbuild/plugin-source-build": "catalog:"
     "@rslib/core": "catalog:"
     "@rstest/core": "catalog:"
     eslint: "catalog:"

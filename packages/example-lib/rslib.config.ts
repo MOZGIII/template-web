@@ -1,4 +1,5 @@
 import { defineConfig } from "@rslib/core";
+import { pluginSourceBuild } from "@rsbuild/plugin-source-build";
 
 export default defineConfig({
   lib: [
@@ -10,4 +11,5 @@ export default defineConfig({
       format: "cjs",
     },
   ],
+  plugins: [pluginSourceBuild()],
 });
