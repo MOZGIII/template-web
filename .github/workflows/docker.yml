@@ -47,12 +47,24 @@ jobs:
         id: artifact-upload-step
         with:
           name: docker-build
+          include-hidden-files: true
           path: |
+            # Docker
             Dockerfile
             .dockerignore
             docker-bake.hcl
+
+            # Build data
             packages/*/dist
             packages/*/Caddyfile
+
+            # Node modules reconstruction
+            .github
+            package.json
+            yarn.lock
+            .yarnrc.yml
+            .node-version
+            packages/*/package.json
 
   docker:
     needs:
@@ -74,6 +86,14 @@ jobs:
         uses: actions/download-artifact@v7
         with:
           artifact-ids: ${{ needs.build_and_plan.outputs.artifact_id }}
+
+      - uses: ./.github/actions/setup
+        with:
+          skip-yarn-install: true
+
+      - run: yarn workspaces focus --production "$(jq -r .name "packages/${{ matrix.target }}/package.json")"
+      - run: mkdir -p "node_modules"
+      - run: ls -la "node_modules"
 
       - name: Docker meta
         id: meta

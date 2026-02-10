@@ -25,4 +25,8 @@ ARG PACKAGE_PATH
 
 COPY ${PACKAGE_PATH}/dist /app
 
+COPY ./node_modules /app/node_modules
+
+RUN ls -la /app /app/node_modules
+
 CMD ["node", "main.js"]

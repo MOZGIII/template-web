@@ -1,3 +1,4 @@
 **/*
 !packages/*/dist
 !packages/*/Caddyfile
+!node_modules
