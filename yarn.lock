@@ -9,8 +9,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "&app@workspace:packages/app"
   dependencies:
-    "&core-lib": "workspace:"
     "&eslint-config": "workspace:"
+    "&ui-lib": "workspace:"
     "@rsbuild/core": "catalog:"
     "@rsbuild/plugin-react": "catalog:"
     "@rsbuild/plugin-source-build": "catalog:"

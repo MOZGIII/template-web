@@ -1,5 +1,5 @@
 {
   "extends": ["../../tsconfig.cli.json"],
   "include": ["src"],
-  "references": []
+  "references": [{ "path": "../ui-lib" }]
 }
