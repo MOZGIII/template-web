@@ -1,12 +1,14 @@
 {
-  "name": "&example-cli",
+  "name": "&tools-cli",
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "bin": {
+    "tools": "./dist/index.js"
+  },
   "scripts": {
-    "build": "tsc --build",
-    "dev": "node src/main.ts",
-    "example-cli:dev": "yarn dev",
+    "build": "rslib build",
+    "start": "yarn tools",
     "eslint:fix": "eslint . --fix",
     "eslint:check": "eslint .",
     "tsc:check": "tsc --build --force"
@@ -16,6 +18,10 @@
   },
   "devDependencies": {
     "&eslint-config": "workspace:",
+    "@rsbuild/core": "catalog:",
+    "@rsbuild/plugin-react": "catalog:",
+    "@rsbuild/plugin-source-build": "catalog:",
+    "@rslib/core": "catalog:",
     "eslint": "catalog:",
     "typescript": "catalog:"
   }

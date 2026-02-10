@@ -1,5 +1,0 @@
-{
-  "extends": ["../../tsconfig.cli.json"],
-  "include": ["src"],
-  "references": []
-}
