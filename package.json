@@ -16,7 +16,8 @@
     "dedupe:check": "yarn dedupe --check"
   },
   "devDependencies": {
-    "prettier": "catalog:"
+    "prettier": "catalog:",
+    "typescript": "catalog:"
   },
   "packageManager": "yarn@4.12.0"
 }

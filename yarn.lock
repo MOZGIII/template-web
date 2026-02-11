@@ -2267,6 +2267,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     prettier: "catalog:"
+    typescript: "catalog:"
   languageName: unknown
   linkType: soft
 
