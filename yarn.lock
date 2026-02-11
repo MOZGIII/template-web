@@ -62,8 +62,6 @@ __metadata:
   dependencies:
     "&core-lib": "workspace:"
     "&eslint-config": "workspace:"
-    "@rsbuild/core": "catalog:"
-    "@rsbuild/plugin-react": "catalog:"
     "@rsbuild/plugin-source-build": "catalog:"
     "@rslib/core": "catalog:"
     eslint: "catalog:"

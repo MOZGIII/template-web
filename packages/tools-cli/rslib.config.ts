@@ -1,5 +1,4 @@
 import { defineConfig } from "@rslib/core";
-import { pluginReact } from "@rsbuild/plugin-react";
 import { pluginSourceBuild } from "@rsbuild/plugin-source-build";
 
 export default defineConfig({
@@ -8,5 +7,5 @@ export default defineConfig({
       format: "esm",
     },
   ],
-  plugins: [pluginReact(), pluginSourceBuild()],
+  plugins: [pluginSourceBuild()],
 });
